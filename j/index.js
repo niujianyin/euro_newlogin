@@ -662,8 +662,8 @@ udvDefine("echarts",function (require, exports, module) {
                     cdata.om = data.result.data;
                     cdata.matchId = matchId;
                     cdata.gameType = gameType;
-                    cdata.hscore = rdata.Score1;
-                    cdata.gscore = rdata.Score2;
+                    cdata.hscore = rdata.home_score;
+                    cdata.gscore = rdata.away_score;
                     // render_smart_in
                     render_smart_in(cdata);
                     setTimeout(function(){
@@ -674,8 +674,8 @@ udvDefine("echarts",function (require, exports, module) {
               } else {
                 cdata.matchId = matchId;
                 cdata.gameType = gameType;
-                cdata.hscore = rdata.Score1;
-                cdata.gscore = rdata.Score2;
+                cdata.hscore = rdata.home_score;
+                cdata.gscore = rdata.away_score;
                 // render_smart_in
                 render_smart_in(cdata);
                 setTimeout(function(){
@@ -725,8 +725,8 @@ udvDefine("echarts",function (require, exports, module) {
                   }
                   cdata.matchId = matchId;
                   cdata.gameType = gameType;
-                  cdata.hscore = rdata.Score1;
-                  cdata.gscore = rdata.Score2;
+                  cdata.hscore = rdata.home_score;
+                  cdata.gscore = rdata.away_score;
                   // render_smart_in
                   render_smart_end(cdata);
                 }

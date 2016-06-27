@@ -265,7 +265,7 @@ function getSinaWbCookieVal(name) {
 
 
 // 登录模块 兼容以前版本全局变量
-var loginUrl = "http://ai.lottery.sina.com.cn/uc/order/index";
+var loginUrl = "http://ai.lottery.sina.com.cn/uc/order/index/?from=euro";
 var logoutUrl = "http://euro.sina.com.cn/lottery/";
 var baseurl = 'http://ai.lottery.sina.com.cn/';
 

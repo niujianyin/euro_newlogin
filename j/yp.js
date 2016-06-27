@@ -2,7 +2,7 @@ __inline('./lib/template.js');
 
 // 登录模块 
 var sinaLoginLayer = SINA_OUTLOGIN_LAYER;
-var loginUrl = "http://ai.lottery.sina.com.cn/uc/order/index";
+var loginUrl = "http://ai.lottery.sina.com.cn/uc/order/index/?from=euro";
 var logoutUrl = "http://euro.sina.com.cn/lottery/";
 var baseurl = 'http://ai.lottery.sina.com.cn/';
 

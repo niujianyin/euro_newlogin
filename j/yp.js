@@ -387,7 +387,7 @@ util.yppay = {
       dataType:'jsonp',
       data: {},
       cache: true,
-      jsonpCallback:"dcPay_"+matchId,
+      jsonpCallback:"dcPay_"+orderNo+"_"+memberId+"_"+chargeWay,
       type:"get",
       success: function(data) {
         var code = data.code;

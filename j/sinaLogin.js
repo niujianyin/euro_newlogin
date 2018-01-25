@@ -498,6 +498,7 @@ util.payment = {
     }
   },
   openPage: function(){
+    var self = this;
     // 再次判断一次wbId
     if(!util.wbId){
       util.wbId = self.checkwbid();

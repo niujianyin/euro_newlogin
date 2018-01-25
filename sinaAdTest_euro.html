@@ -2319,19 +2319,105 @@
                   padding: 0px;
                   width: 238px;
                 }
-                .isp-caitong-lx{
-                  height: 147px;
-                  width: 238px;
+                .item-caitong .isp-head{
+                  padding: 0 12px;
+                }
+                .item-caitong .isp-head a, .item-caitong .isp-head a:visited{
+                  color: #e74153;
+                }
+                .item-caitong .isp-head span a, .item-caitong .isp-head span a:visited{
+                  font-size: 12px;
+                  color: #9da0a3;
+                }
+                .item-caitong .isp-head span {
+                  float: right;
+                }
+                .caitong-smart{
+                  padding: 0 12px;
+                  height: 85px;
                   overflow: hidden;
                   position: relative;
-                  background: url(http://n.sinaimg.cn/sports/lotteuro2016/pc/i/caitong_newseason1.png) no-repeat center top;
-                  margin-top: -7px;
                 }
-                .isp-caitong-lx a,.isp-caitong-lx a:visited{
+                .caitong-smart a,.caitong-smart a:visited{
                   display: block;
-                  height: 147px;
-                  width: 238px;
+                  width: 100%;
+                  height: 84px;
+                  border-bottom: 1px solid #f5f6f7;
+                  color:#313336;
                   cursor: pointer;
+                }
+                .caitong-smart span{
+                  display: block;
+                }
+                .caitong-smart-home{
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  width: 58px;
+                }
+                .caitong-smart-guest{
+                  position: absolute;
+                  right: 0px;
+                  top: 0px;
+                  width: 58px;
+                }
+                .caitong-smart-flag{
+                  width: 44px;
+                  height: 44px;
+                  position: absolute;
+                  left: 12px;
+                  top: 8px;
+                  -webkit-border-radius: 100%;
+                  border-radius: 100%;
+                  overflow: hidden;
+                  border:1px solid #f3f4f5;
+                }
+                .caitong-smart-guest .caitong-smart-flag{
+                  left: auto;
+                  right: 12px;
+                }
+                .caitong-smart-flag img{
+                  display: block;
+                  width: 60px;
+                  height: 60px;
+                  max-width: 60px;
+                  margin: -8px 0 0 -8px;
+                  -webkit-border-radius: 100%;
+                  border-radius: 100%
+                }
+                .caitong-smart-name{
+                  padding-top: 60px;
+                  padding-left: 10px;
+                  width: 48px;
+                  height: 20px;
+                  text-align: center;
+                  line-height: 20px;
+                  font-size: 12px;
+                  color:#313336;
+                }
+                .caitong-smart-guest .caitong-smart-name{
+                  padding-right: 10px;
+                  padding-left: 0px;
+                }
+                .caitong-smart-main{
+                  padding:14px 0 0 48px;
+                  overflow: hidden;
+                }
+                .caitong-smart-date{
+                  width: 117px;
+                  text-align: center;
+                  line-height: 20px;
+                  height: 20px;
+                  font-size: 12px;
+                  padding-bottom: 4px;
+                }
+                .caitong-smart-purchase{
+                  background: url(http://n.sinaimg.cn/sports/lotteuro2016/pc/i/caitong_btn_purchase.png) no-repeat;
+                  width: 117px;
+                  height: 33px;
+                }
+                .caitong-smart a:hover .caitong-smart-purchase{
+                  background: url(http://n.sinaimg.cn/sports/lotteuro2016/pc/i/caitong_btn_purchase_h.png) no-repeat;
                 }
                 .isp-caitong-yp{
                   padding: 0 12px;
@@ -2341,10 +2427,6 @@
                 }
                 .isp-caitong-yp a,.isp-caitong-yp a:visited{
                   color: #2a58b7;
-                  text-decoration: none;
-                }
-                .isp-caitong-yp a span{
-                  color: #e84253;
                 }
                 .caitong-yp-link1{
                   float: right;
@@ -2368,7 +2450,7 @@
                   border-left: 0 none;
                 }
 
-                .item-caitong .isp-head a:hover, .item-caitong .isp-head span a:hover,.caitong-smart a:hover,#caitong-newseason:hover span,.isp-caitong-yp a:hover,.isp-caitong-yp a:hover span{
+                .item-caitong .isp-head a:hover, .item-caitong .isp-head span a:hover,.caitong-smart a:hover,.isp-caitong-yp a:hover{
                   color:#ff8400;
                 }
                 .isp-caitong-footer a:hover{
@@ -2376,17 +2458,45 @@
                 }
               </style>
               <div class="item-sina-products item-caitong" data-sudaclick="">
-                <div class="isp-caitong-lx">
-                  <a href="http://sports.sina.com.cn/euro2016/lottery/1617season.html" target="_blank"></a>
+                <div class="isp-head">
+                  <h4 class="clearfix">
+                    <a href="http://lottery.sina.com.cn/" target="_blank">新浪彩票</a>
+                    <span><a href="http://euro.sina.com.cn/lottery/" target="_blank">人工智能神预测</a></span>
+                  </h4>
+                </div>
+                <div class="isp-content isp-caitong">
+                  <div class="caitong-smart">
+                    <a href="http://euro.sina.com.cn/lottery/#smart_alink_00" target="_blank">
+                      <span class="caitong-smart-home">
+                        <span class="caitong-smart-flag">
+                          <img src="http://www.sinaimg.cn/lf/sports/logo85/938.png" alt="波兰">
+                        </span>
+                        <span class="caitong-smart-name">波兰</span>
+                      </span>
+                      <span class="caitong-smart-guest">
+                        <span class="caitong-smart-flag">
+                          <img src="http://www.sinaimg.cn/lf/sports/logo85/939.png" alt="波兰">
+                        </span>
+                        <span class="caitong-smart-name">葡萄牙</span>
+                      </span>
+                      <span class="caitong-smart-main">
+                        <span class="caitong-smart-date">2016-07-01 03:00</span>
+                        <span class="caitong-smart-purchase"></span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="isp-caitong-yp">
+                  <a href="http://euro.sina.com.cn/lottery/yp.html#yp_link_02" target="_blank" class="caitong-yp-link">全赛程预测</a>
+                  <a href="http://euro.sina.com.cn/lottery/yp.html#yp_link_01" target="_blank" class="caitong-yp-link1">1元送礼包 稳赚欧洲杯</a>
                 </div>
                 <div class="isp-caitong-footer clearfix">
-                  <a href="http://sports.sina.com.cn/euro2016/lottery/1617season.html#ns_link_01" target="_blank" class="caitong-link caitong-link-first">6折vip卡</a>
-                  <a href="http://sports.sina.com.cn/euro2016/lottery/1617season.html#ns_link_02" target="_blank" class="caitong-link">7折充值卡</a>
-                  <a href="http://sports.sina.com.cn/euro2016/lottery/1617season.html#ns_link_03" target="_blank" class="caitong-link">钜惠体验</a>
+                  <a href="http://euro.sina.com.cn/lottery/#smart_alink_00" target="_blank" class="caitong-link caitong-link-first">亚盘预测</a>
+                  <a href="http://euro.sina.com.cn/lottery/#smart_alink_00" target="_blank" class="caitong-link">胜平负预测</a>
+                  <a href="http://euro.sina.com.cn/lottery/#smart_alink_00" target="_blank" class="caitong-link">大小球预测</a>
                 </div>
               </div>
               <!-- 新浪彩通 end -->
-
               <style>
               .item-licaishi {
                 display: none;
